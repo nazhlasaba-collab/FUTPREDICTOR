@@ -219,6 +219,212 @@
             width: 100%;
             margin-top: 10px;
         }
+                /* ========================================== */
+        /* ESTILOS RESPONSIVE PARA ADMIN - MÓVILES */
+        /* ========================================== */
+        
+        @media (max-width: 768px) {
+            /* Header */
+            .header {
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .user-info {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            /* Sidebar */
+            .admin-layout {
+                flex-direction: column;
+            }
+            
+            .admin-sidebar {
+                width: 100%;
+                position: static;
+            }
+            
+            .admin-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                padding: 10px;
+            }
+            
+            .admin-menu li {
+                flex: 1;
+                min-width: calc(33% - 10px);
+                text-align: center;
+                justify-content: center;
+                font-size: 0.7rem;
+                padding: 10px 5px;
+            }
+            
+            .admin-menu li i {
+                margin-right: 5px;
+                font-size: 0.85rem;
+            }
+            
+            /* Stats grid */
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .stat-card {
+                padding: 15px 10px;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+            
+            .stat-label {
+                font-size: 0.7rem;
+            }
+            
+            /* Tablas */
+            .admin-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .admin-table th,
+            .admin-table td {
+                padding: 8px;
+                font-size: 0.7rem;
+            }
+            
+            .cuotas-mini {
+                flex-direction: column;
+                gap: 3px;
+            }
+            
+            .cuota-mini {
+                font-size: 0.65rem;
+                padding: 2px 4px;
+            }
+            
+            .acciones-btns {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .btn-sm {
+                padding: 4px 8px;
+                font-size: 0.7rem;
+            }
+            
+            /* Resultados forms */
+            .resultados-form {
+                padding: 15px;
+            }
+            
+            .resultados-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .resultado-input input {
+                width: 100px;
+                font-size: 1.5rem;
+            }
+            
+            .acciones-botones {
+                flex-direction: column;
+            }
+            
+            .btn-liquidar,
+            .btn-aleatorio,
+            .btn-simular {
+                width: 100%;
+            }
+            
+            /* Info cards */
+            .resultados-section > div:first-child > div {
+                flex-direction: column;
+            }
+            
+            /* Usuarios tabla */
+            .admin-table td .acciones-usuario {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .admin-table td .input-fichas {
+                width: 60px;
+            }
+            
+            /* Modal */
+            .modal-content {
+                width: 95%;
+                margin: 20px auto;
+            }
+            
+            .match-score-control {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .team-score-input {
+                width: 100%;
+            }
+            
+            /* Perfil */
+            .profile-card {
+                padding: 20px;
+            }
+            
+            .profile-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .admin-menu li {
+                min-width: calc(50% - 10px);
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-align: left;
+                padding: 12px;
+            }
+            
+            .stat-card i {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+            }
+            
+            .stat-card div {
+                text-align: right;
+            }
+            
+            .admin-table th,
+            .admin-table td {
+                padding: 6px;
+                font-size: 0.65rem;
+            }
+            
+            .btn-sm {
+                padding: 3px 6px;
+                font-size: 0.65rem;
+            }
+        }
     </style>
 </head>
 <body>
