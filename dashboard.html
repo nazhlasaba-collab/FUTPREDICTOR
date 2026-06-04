@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Fútbol Apuestas - Panel de Usuario</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/admin.css">
@@ -1192,44 +1192,7 @@
             background: linear-gradient(135deg, #95a5a6, #7f8c8d);
         }
 
-        @media (max-width: 768px) {
-            .music-player {
-                bottom: 70px;
-                right: 15px;
-            }
-            
-            .music-volume-btn {
-                width: 32px;
-                height: 32px;
-                font-size: 0.9rem;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
-            
-            .bank-details {
-                grid-template-columns: 1fr;
-            }
-            
-            .transaction-tabs {
-                flex-direction: column;
-                border-radius: 16px;
-            }
-            
-            .tab-btn {
-                justify-content: center;
-            }
-            
-            .transaction-form {
-                padding: 18px;
-            }
-
-            .payment-methods {
-                flex-direction: column;
-            }
-                    /* ========================================== */
+        /* ========================================== */
         /* ESTILOS PARA ANIMACIÓN DE GOOL CON IMAGEN */
         /* ========================================== */
         
@@ -1495,11 +1458,281 @@
         @keyframes detallesEntrada {
             to { opacity: 1; }
         }
+        
+        /* ========================================== */
+        /* ESTILOS RESPONSIVE PARA MÓVILES */
+        /* ========================================== */
+        
+        @media (max-width: 768px) {
+            /* Header responsive */
+            .header {
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+            
+            .user-info {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+            
+            .fichas-card {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .user-menu {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            /* Sidebar responsive */
+            .admin-layout {
+                flex-direction: column;
+            }
+            
+            .admin-sidebar {
+                width: 100%;
+                position: static;
+                border-radius: 0;
+                margin-bottom: 15px;
+            }
+            
+            .admin-menu {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 10px;
+            }
+            
+            .admin-menu li {
+                flex: 1;
+                min-width: calc(33.33% - 8px);
+                text-align: center;
+                justify-content: center;
+                font-size: 0.75rem;
+                padding: 10px 5px;
+            }
+            
+            .admin-menu li i {
+                margin-right: 5px;
+                font-size: 0.9rem;
+            }
+            
+            .admin-profile {
+                padding: 15px;
+            }
+            
+            .admin-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            /* Contenido principal */
+            .admin-content {
+                padding: 15px;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+            
+            .header-actions {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            
+            .stats-summary {
+                flex-wrap: wrap;
+            }
+            
+            .stat-badge {
+                min-width: calc(33% - 10px);
+            }
+            
+            /* Carrusel */
+            .carousel-title {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+            
+            /* Tarjetas de partidos */
+            .partidos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .partido-card {
+                padding: 15px;
+            }
+            
+            .partido-equipos {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .cuota-preview {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            
+            /* Apuestas activas */
+            .apuestas-activas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .apuesta-activa-card {
+                padding: 15px;
+            }
+            
+            .detalles-apuesta {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Tablas */
+            .table-container {
+                overflow-x: auto;
+            }
+            
+            .modern-table {
+                min-width: 600px;
+            }
+            
+            .modern-table th,
+            .modern-table td {
+                padding: 8px;
+                font-size: 0.7rem;
+            }
+            
+            /* Pagos/Retiros */
+            .pagos-container {
+                padding: 0;
+            }
+            
+            .bank-info-card {
+                padding: 15px;
+            }
+            
+            .bank-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .bank-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .transaction-tabs {
+                flex-direction: column;
+                border-radius: 16px;
+            }
+            
+            .tab-btn {
+                justify-content: center;
+            }
+            
+            .transaction-form {
+                padding: 15px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .payment-methods {
+                flex-direction: column;
+            }
+            
+            /* Modal */
+            .modal-content {
+                width: 95%;
+                margin: 20px auto;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+            
+            .modal-large {
+                width: 95%;
+            }
+            
+            .prediccion-opciones {
+                flex-direction: column;
+            }
+            
+            .opcion-btn {
+                width: 100%;
+            }
+            
+            /* Avatar grid */
+            .avatar-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            /* Footer */
+            .footer {
+                text-align: center;
+                padding: 15px;
+                font-size: 0.7rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .admin-menu li {
+                min-width: calc(50% - 8px);
+                font-size: 0.7rem;
+            }
+            
+            .stat-badge {
+                min-width: calc(50% - 10px);
+            }
+            
+            .avatar-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .resultado-marcador {
+                font-size: 1rem;
+            }
+            
+            .gol-texto-fallback {
+                font-size: 3rem;
+                letter-spacing: 10px;
+            }
+            
+            .perdiste-texto-animado {
+                font-size: 2.5rem;
+                letter-spacing: 8px;
+            }
+            
+            .music-player {
+                bottom: 70px;
+                right: 15px;
+            }
+            
+            .music-volume-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 0.9rem;
+            }
         }
     </style>
     
     <footer class="footer">
-        <p>© 2024 Fútbol  - Todos los derechos reservados</p>
+        <p>© 2024 Fútbol Apuestas - Todos los derechos reservados</p>
         <p style="margin-top: 6px; font-size: 0.8em;"></p>
     </footer>
 </body>
